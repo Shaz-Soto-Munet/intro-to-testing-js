@@ -126,5 +126,28 @@ describe("isVowel", function(){
     it('should return false if no argument is passed', function () {
         expect(isVowel()).toBe(false);
     });
+})
 
+describe("add", function (){
+    it('should be a defined function', function () {
+        expect(typeof add).toBe("function");
+    });
+    it('should return 5 when given the arguments 2, 3', function () {
+        expect(add(2, 3)).toBe(5);
+    });
+    it('should return -12 when given the arguments -3, -9', function () {
+        expect(add(-3, -9)).toBe(-12);
+    });
+    it('should return 11 when given the arguments "5", 6', function () {
+        expect(add("5", 6)).toBe(11);
+    });
+    it('should return NaN when given strings as arguments', function () {
+        expect(add("banana", "split")).toBeNaN();
+    });
+    it('should return NaN when given a string and a number', function () {
+        expect(add(2, "apples")).toBeNaN();
+    });
+    it('should return NaN when passing no argument', function () {
+        expect(add()).toBeNaN();
+    });
 })

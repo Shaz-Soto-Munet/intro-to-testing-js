@@ -32,5 +32,9 @@ function isVowel(input){
     return input === "a" || input === "e" || input === "i" || input === "o" || input === "u" || input === "A" || input === "E" || input === "I" || input === "O" || input === "U";
 }
 
+function add(num1, num2){
+    return Number(num1) + Number(num2);
+}
+
 
 
