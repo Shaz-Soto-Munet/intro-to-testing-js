@@ -53,8 +53,17 @@ describe('sayHello', function(){
     });
 });
 
-describe("isEven", function(){
+describe("isFive", function(){
     it('should be a defined function', function () {
-        expect(typeof sayHello).toBe("function");
+        expect(typeof isFive).toBe("function");
+    });
+    it('should return a boolean', function () {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it('should return true when given the number 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return true when given "5"', function () {
+        expect(isFive("5")).toBe(true);
     });
 })
