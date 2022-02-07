@@ -28,8 +28,8 @@ function isEven(input){
 }
 
 //isVowel, exercise #12
-function isVowel(){
-
+function isVowel(input){
+    return input === "a" || input === "e" || input === "i" || input === "o" || input === "u" || input === "A" || input === "E" || input === "I" || input === "O" || input === "U";
 }
 
 
