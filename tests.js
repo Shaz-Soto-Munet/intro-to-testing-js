@@ -30,4 +30,31 @@ describe('sayHello', function(){
     it('should return "Hello, Pat!', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return "Hello, World!', function () {
+        expect(sayHello()).toBe("Hello, World!")
+    });
+    it('input null should return "Hello, World!', function () {
+        expect(sayHello(null)).toBe("Hello, World!")
+    });
+    it('empty string input should return "Hello, World!', function () {
+        expect(sayHello("")).toBe("Hello, World!")
+    });
+    it('number string input should return "Hello, World!', function () {
+        expect(sayHello("2")).toBe("Hello, World!")
+    });
+    it('number input should return "Hello, World!', function () {
+        expect(sayHello(2.5)).toBe("Hello, World!")
+    });
+    it('boolean input true should return "Hello, World!', function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('boolean input false should return "Hello, World!', function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+});
+
+describe("isEven", function(){
+    it('should be a defined function', function () {
+        expect(typeof sayHello).toBe("function");
+    });
 })
