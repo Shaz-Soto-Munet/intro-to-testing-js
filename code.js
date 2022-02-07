@@ -22,4 +22,15 @@ function isFive(input){
     return input == 5;
 }
 
+//isEven function, exercise #11
+function isEven(input){
+    return input % 2 === 0;
+}
+
+//isVowel, exercise #12
+function isVowel(){
+
+}
+
+
 
